@@ -128,7 +128,7 @@ h1 {
 
 /*------left-side container end-------*/
 
-.main {
+.main { /*-----main container properties-----*/
   overflow: scroll;
   flex: 6; /*flex-growth  value*/
 }
@@ -230,6 +230,14 @@ input:focus:valid + span::after { /*when the user enters "exact" characters requ
 }
 
 /*------welcome message and form section inside the main division end-------*/
+
+.submit {
+  height: 250px;
+  padding: 24px 36px;
+  background-color: hsla(217, 81%, 71%, 0.1);
+}
+
+
 
 
 
