@@ -109,3 +109,23 @@ h1 {
   margin: 0;
 }
 
+.img-ownership {
+  position: absolute; /*behaving as a free div inside the page*/
+  width: 50%; /*cover half of the left-side container's width*/
+  height: 25px; /*sizing it to a defined height in shape*/
+  bottom: 0%; /*what the exact place is-1*/
+  right: 0px; /*what the exact place is-2*/
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+  background-color:aliceblue;
+}
+
+.img-ownership > p {
+  margin-top: 5px; /*what the exact place is*/
+}
+
+/*------left-side container end-------*/
+
+
