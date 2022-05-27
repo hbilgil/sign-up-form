@@ -102,8 +102,13 @@ body  {
   border-radius: 50%; /*making it a complete circle in shape*/
 }
 
+@font-face {
+  font-family: 'Sansation Light';
+  src: url(./Sansation\ Light.ttf);
+}
+
 h1 {
-  font-family: 'Sansation Light'; /*the font is derived from a source with <link> element in HTML code*/
+  font-family: 'Sansation Light', sans-serif; /*the font is derived from a source with <link> element in HTML code*/
   font-weight: 800;
   font-size: 50px;
   margin: 0;
