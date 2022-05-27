@@ -128,4 +128,12 @@ h1 {
 
 /*------left-side container end-------*/
 
+.main {
+  overflow: scroll;
+  flex: 6; /*flex-growth  value*/
+}
+
+
+
+
 
