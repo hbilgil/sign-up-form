@@ -133,6 +133,21 @@ h1 {
   flex: 6; /*flex-growth  value*/
 }
 
+.welcome-message {
+  padding: 64px 36px 18px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: hsla(217, 81%, 71%, 0.1);
+  line-height: 30px; /*resizing the height of the lines inside the paragraph for a better user experience*/
+}
+
+.welcome-message >p + p {
+  padding-top: 10px; /*making it apart from other lines inside the paragraph*/
+}
+
+em {
+  font-style: italic;
+}
 
 
 
