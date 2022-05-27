@@ -181,6 +181,55 @@ em {
   margin: 0;
 }
 
+input {
+  width : 100%;
+  padding: 3px 5px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+input:focus { /*when mouse clicked*/
+  background-color:aliceblue;
+}
+
+input:focus:invalid { /*when mouse clicked for "required" input types*/
+  background-color: blanchedalmond;
+}
+
+input:focus + span { /*a place for informing the user for the condition of input*/
+  position: relative;
+  display: flex;
+}
+  
+input:focus + span::after { /*after pseudo element is used to allow conditional span section*/
+  position: absolute;
+  right: -30px; /*what the exact place is-1*/
+  top: -20px; /*what the exact place is-2*/
+}
+  
+input:focus:invalid + span::after { /*when the user enters unknown characters or does not enter anything at all*/
+  content: '✖';
+  color: red;
+}
+  
+input:focus:valid + span::after { /*when the user enters "exact" characters required for the input type*/
+    content: '✓';
+    color: green;
+}
+
+ /*password inputs are highlighted with special properties for error class declared in HTML*/
+.error:invalid {
+  border: 1px solid red;
+}
+
+.error:invalid + span::after {
+  content: '*Passwords do not match';
+  color: red;
+}
+
+/*------welcome message and form section inside the main division end-------*/
 
 
 
