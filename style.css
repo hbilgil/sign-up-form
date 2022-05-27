@@ -289,6 +289,25 @@ a[href="https://github.com/hbilgil"]:hover { /*when mouse points the "a" element
   color:blue;
   font-weight: unset; /*font-weight property will not be used as universally declared for "a" elements*/
 }
+/*------footer section inside the main division end-------*/
+/*------main container end-------*/
+
+a:link, /*when mouse points an unvisited link*/
+a:visited, /*when mouse points a visited link*/
+a:active { /*when mouse clicked a link*/
+  text-decoration: none;
+  color:#000;
+}
+
+a:hover { /*when mouse points the "a" element*/
+  text-decoration: none;
+  color:orangered;
+  font-weight: bold;
+}
+
+/*------universal declarations end-------*/
+
+
 
 
 
