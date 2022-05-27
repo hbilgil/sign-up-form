@@ -157,6 +157,31 @@ em {
   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
+.form > p {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+#signup-form {
+  display: flex;
+  flex-wrap: wrap; /*wrapping the divs inside the form*/
+  justify-content: space-between;
+  width: 70%; /*cover 70% of the form container's width*/
+  margin-top: 30px;
+}
+
+#signup-form > div {
+  width: 40%; /*cover 40% of the sign-up form's width*/
+  min-width: 150px; /*resizing the input places for a better user experience*/
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#signup-form > label {
+  margin: 0;
+}
+
+
 
 
 
