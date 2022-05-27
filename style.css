@@ -237,6 +237,15 @@ input:focus:valid + span::after { /*when the user enters "exact" characters requ
   background-color: hsla(217, 81%, 71%, 0.1);
 }
 
+.submit a[href="#"] { /*a element with an attribute of href="#" is used as an advanced selector*/
+  color: #0889ebcf;
+  font-weight: bold;
+}
+
+.submit a[href="#"]:hover { /*when mouse points the "a" element with an attribute of href="#"*/
+  color:orangered;
+  font-weight: bold;
+}
 
 
 
