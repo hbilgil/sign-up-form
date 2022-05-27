@@ -247,6 +247,30 @@ input:focus:valid + span::after { /*when the user enters "exact" characters requ
   font-weight: bold;
 }
 
+button[type='submit'] {
+  border: none;
+  color: white;
+  background-color: #0889ebcf;
+  padding: 12px 36px;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3.5%;
+}
+
+button:hover { /*when mouse points the "button" element*/
+  background: #000;
+  color: #FFF;
+  cursor: pointer;
+}
+
+button:focus { /*when mouse clicked the "button" element*/
+  background: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+/*------submit section inside the main division end-------*/
 
 
 
