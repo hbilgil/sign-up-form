@@ -65,3 +65,14 @@ body  {
 }
 
 /*------root and body end-------*/
+
+.left-side-area { /*-----left-side container properties-----*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 4;
+  overflow: hidden;
+}
+
+
