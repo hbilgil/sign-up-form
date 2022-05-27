@@ -272,6 +272,25 @@ button:focus { /*when mouse clicked the "button" element*/
 
 /*------submit section inside the main division end-------*/
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  width: 100%; /*cover whole main container's width*/
+  height: 25px; /*sizing it to a defined height in shape*/
+  background-color: hsla(210, 1%, 50%, 0.4);
+}
+
+a[href="https://github.com/hbilgil"]:hover { /*when mouse points the "a" element with an attribute of href="https://github.com/hbilgil"*/
+  text-decoration: none;
+  color:blue;
+  font-weight: unset; /*font-weight property will not be used as universally declared for "a" elements*/
+}
+
+
 
 
 
