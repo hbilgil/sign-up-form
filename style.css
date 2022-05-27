@@ -80,3 +80,16 @@ body  {
   min-width: 100%;
   object-fit: cover; /*attaching it as a background image*/
 }
+
+.left-side-logo {    
+  position: absolute; /*behaving as a free div inside the page*/
+  top: 35%; /*what the exact place is*/
+  width: 100%; /*cover whole left-side container's width*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.4); /*add opacity*/
+  color: white;
+}
