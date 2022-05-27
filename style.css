@@ -93,3 +93,19 @@ body  {
   background-color: rgba(0, 0, 0, 0.4); /*add opacity*/
   color: white;
 }
+
+.left-side-logo .logo {
+  height: 5rem;
+  margin-left: 45px;
+  min-width: auto;
+  object-fit: contain; /*sizing it to the defined measures*/
+  border-radius: 50%; /*making it a complete circle in shape*/
+}
+
+h1 {
+  font-family: 'Sansation Light'; /*the font is derived from a source with <link> element in HTML code*/
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0;
+}
+
