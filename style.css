@@ -50,3 +50,18 @@ table {
 
 /*--------reset css end-------*/
 
+:root,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+:root  {
+    box-sizing: border-box;
+}
+
+body  {
+    display: flex;
+}
+
+/*------root and body end-------*/
