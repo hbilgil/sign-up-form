@@ -149,6 +149,15 @@ em {
   font-style: italic;
 }
 
+.form {
+  display: flex;
+  flex-direction: column; /*flex-direction is changed to place inputs in column format*/
+  justify-content: center;
+  padding: 12px 36px;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 
