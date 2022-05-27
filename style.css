@@ -190,6 +190,10 @@ input {
   margin-top: 2px;
 }
 
+::placeholder {
+  color: #E5E7EB;
+}
+
 input:focus { /*when mouse clicked*/
   background-color:aliceblue;
 }
