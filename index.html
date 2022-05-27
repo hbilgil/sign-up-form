@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/99f7456dfd298c4545c7687ce8d5539d?family=Sansation+Light" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
     <div class="left-side-area">
         <img src="kyle-hinkson-unsplash.jpg" alt="kyle-hinkson" />
         <div class="left-side-logo">
-            <img src="https://www.vectorstock.com/royalty-free-vector/cappadocia-turkey-detailed-silhouette-vector-26959349"
-                alt="logo"
-                class="logo"
-            />
-            <h1>Adventure in Cappadocia</h1>
+          <img src="cappadocia.webp"
+             class="logo"/>
+          <h1>Adventure in Cappadocia</h1>
         </div>
+        
         <div class="img-ownership">
             <p>Photo by
                 <a href="https://unsplash.com/@kajhinkson">Kyle Hinkson</a>
@@ -31,10 +32,10 @@
 
             <p> This is not a real online service! You know you need something 
                 like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
+                Sign up <em>now</em> to get started.
             </p>
 
-            <p>You know you want to!</p>
+            <p>You <em>know</em> you want to!</p>
 
         </div>
 
@@ -42,35 +43,39 @@
 
             <p>Let's do this!</p>
 
-            <form action="#" id="signup-form">
+            <form action="#" id="signup-form" method="post">
                 <div>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name"/>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="user-first-name"/>
                 </div>
 
                 <div>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name"/>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="user-last-name"/>
                 </div>
 
                 <div>
                     <label for="e-mail">Email</label>
-                    <input type="email" id="e-mail" name="e-mail"/>
+                    <input type="email" id="e-mail" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                    <span></span>
                 </div>
 
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone"/>
+                    <input type="tel" id="phone" name="user-phone" minlength="10" maxlength="10" required pattern="[0-9]{10}" placeholder="5321234578"/>
+                    <span></span>
                 </div>
 
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password"/>
+                    <input type="password" id="password" name="user-password" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+                    <span></span>
                 </div>
 
                 <div>
-                    <label for="pass-confirmation">Confirm Password</label>
-                    <input type="password" id="pass-confirmation" name="pass-confirmation"  />
+                    <label for="passConfirmation">Confirm Password</label>
+                    <input type="password" id="passConfirmation" name="user-passConfirmation" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+                    <span></span>
                 </div>
 
             </form>
@@ -79,11 +84,25 @@
 
         <div class="submit">
 
-            <button type="submit" form="signup-form">Submit</button>
+            <button type="submit" form="signup-form">Create Account</button>
 
             <p>Already have an account? <a href="#">Log in</a></p>
 
         </div>
+
+        <footer>
+            <p>
+                Copyright ©
+      
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+
+              <a href="https://github.com/hbilgil" target="_blank"> Halil Bilgil </a>
+
+            </p>
+
+        </footer>
 
     </div>
     
